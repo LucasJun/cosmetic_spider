@@ -23,8 +23,13 @@ class CosmeticSpiderPipeline(object):
 
     def process_item(self, item, spider):
         data = dict(item)
-        self.sheet.insert(data)
-        return item
+        updateFilter = {'item_name': data['item_name']}
+        updateRes = self.sheet.update_one(
+            filter=updateFilter,
+            update={'$set': data},
+            upsert=True)
+        # self.sheet.insert(data)
+        return updateRes
 
 # 官方文档实例，不完整
 # class MongoPipeline(object):

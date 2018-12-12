@@ -17,5 +17,7 @@ class CosmeticItem(scrapy.Item):
     # 商品库存
     item_count = scrapy.Field()
     # 商品价格
-    # item_price = scrapy.Field()
+    item_price = scrapy.Field()
+    # 更新日期
+    date = scrapy.Field()
     pass

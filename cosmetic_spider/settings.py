@@ -35,6 +35,11 @@ ROBOTSTXT_OBEY = False
 # Disable cookies (enabled by default)
 COOKIES_ENABLED = True
 
+COOKIE = {
+        'JSESSIONID': 'IP966ND1-TTR06F5C2X5KQ54W3OJH3-B7MDD6PJ-7Z1',
+        'td_cookie': '3110613103'
+    }
+
 # Disable Telnet Console (enabled by default)
 #TELNETCONSOLE_ENABLED = False
 
@@ -76,6 +81,7 @@ MONGODB_PORT = 27017
 MONGODB_DBNAME = "COSMETIC_DATA"
 # 存放数据的表名称
 MONGODB_SHEETNAME = "PRODUCT_SHEET"
+
 
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://doc.scrapy.org/en/latest/topics/autothrottle.html
