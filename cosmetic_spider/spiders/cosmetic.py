@@ -15,7 +15,9 @@ class CosmeticSpider(scrapy.Spider):
         yield scrapy.Request(url=start_urls, headers=headers, cookies=cookie)
 
     def price_adjust(self, item_price):
-        if item_price >= 0 and item_price <= 50:
+        if item_price > 0 and item_price <=30:
+            item_price = item_price + 10    # 不包邮
+        elif item_price > 30 and item_price <= 50:
             item_price = item_price + 10 + 11
         elif item_price > 50 and item_price <= 100:
             item_price = item_price + 15 + 11
