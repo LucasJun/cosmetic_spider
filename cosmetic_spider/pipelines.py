@@ -20,6 +20,8 @@ class CosmeticSpiderPipeline(object):
         db = client[dbname]
         # 存放数据的数据库表名
         self.sheet = db[sheetname]
+        # 清空旧表
+        self.sheet.drop()
 
     def process_item(self, item, spider):
         data = dict(item)
