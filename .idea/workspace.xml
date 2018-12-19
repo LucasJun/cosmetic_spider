@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5848e8af-10da-4df2-9a93-1b5e05bff974" name="Default Changelist" comment="">
+    <list default="true" id="5848e8af-10da-4df2-9a93-1b5e05bff974" name="Default Changelist" comment="cookies_update">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cosmetic_spider/spiders/cosmetic.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosmetic_spider/spiders/cosmetic.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cosmetic_spider/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/cosmetic_spider/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosmetic_spider/spiders/cosmetic.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="23">
-              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+            <state relative-caret-position="506">
+              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
               <folding>
                 <element signature="e#24#37#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cosmetic_spider/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="536">
+              <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -37,8 +46,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cosmetic_spider/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="828">
+              <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
               <folding>
                 <element signature="e#194#208#0" expanded="true" />
               </folding>
@@ -63,16 +72,16 @@
       <list>
         <option value="$PROJECT_DIR$/cosmetic_spider/main.py" />
         <option value="$PROJECT_DIR$/cosmetic_spider/items.py" />
-        <option value="$PROJECT_DIR$/cosmetic_spider/settings.py" />
         <option value="$PROJECT_DIR$/cosmetic_spider/pipelines.py" />
         <option value="$PROJECT_DIR$/cosmetic_spider/spiders/cosmetic.py" />
+        <option value="$PROJECT_DIR$/cosmetic_spider/settings.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="1099" />
-    <option name="width" value="1466" />
-    <option name="height" value="1408" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="1294" />
+    <option name="height" value="1407" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -80,6 +89,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -102,7 +112,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -174,13 +183,21 @@
       <option name="project" value="LOCAL" />
       <updated>1544965219047</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="商品价格调整">
+      <created>1544971996926</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1544971996926</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1099" y="0" width="1466" height="1408" extended-state="0" />
+    <frame x="-7" y="0" width="1294" height="1407" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13585435" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19187897" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -191,7 +208,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.14913657" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" sideWeight="0.4992997" visible="true" weight="0.48979592" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.4992997" visible="true" weight="0.24430479" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5007003" side_tool="true" weight="0.48979592" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.32914376" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
@@ -224,11 +241,26 @@
         </entry>
       </map>
     </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="数据结构以及价格调整" />
     <MESSAGE value="修复数据匹配出错" />
-    <option name="LAST_COMMIT_MESSAGE" value="修复数据匹配出错" />
+    <MESSAGE value="商品价格调整" />
+    <option name="LAST_COMMIT_MESSAGE" value="商品价格调整" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$USER_HOME$/Anaconda3/envs/web_spider/Lib/site-packages/scrapy/http/response/text.py">
@@ -268,13 +300,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="519">
           <caret line="52" column="19" lean-forward="true" selection-start-line="52" selection-start-column="19" selection-end-line="52" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cosmetic_spider/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1058">
-          <caret line="46" column="23" selection-start-line="46" selection-end-line="46" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -346,8 +371,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cosmetic_spider/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="828">
+          <caret line="36" column="30" lean-forward="true" selection-start-line="36" selection-start-column="30" selection-end-line="36" selection-end-column="30" />
           <folding>
             <element signature="e#194#208#0" expanded="true" />
           </folding>
@@ -356,11 +381,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cosmetic_spider/spiders/cosmetic.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+        <state relative-caret-position="506">
+          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
           <folding>
             <element signature="e#24#37#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cosmetic_spider/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="536">
+          <caret line="40" column="5" lean-forward="true" selection-start-line="40" selection-start-column="5" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
