@@ -33,6 +33,7 @@ class CosmeticSpiderPipeline(object):
         # self.sheet.insert(data)
         return updateRes
 
+
 # 官方文档实例，不完整
 # class MongoPipeline(object):
 #
