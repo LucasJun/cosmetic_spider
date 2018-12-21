@@ -37,7 +37,7 @@ COOKIES_ENABLED = True
 
 COOKIE = {
         'JSESSIONID': 'IP966ND1-TTR06F5C2X5KQ54W3OJH3-B7MDD6PJ-7Z1',
-        'td_cookie': '3910620953'
+        'td_cookie': '4065848571'   # 不定期更新
     }
 
 # Disable Telnet Console (enabled by default)

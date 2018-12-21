@@ -26,15 +26,15 @@ class CosmeticSpider(scrapy.Spider):
         elif item_price > 200 and item_price <= 300:
             item_price = item_price + 30 + 11
         elif item_price > 300 and item_price <= 400:
-            item_price = item_price + 45 + 11
+            item_price = item_price + 45 + 7
         elif item_price > 400 and item_price <= 500:
-            item_price = item_price + 50 + 11
+            item_price = item_price + 50 + 7
         elif item_price > 500 and item_price <= 800:
-            item_price = item_price + 60 + 11
+            item_price = item_price + 60 + 7
         elif item_price > 800 and item_price <= 1000:
-            item_price = item_price + 80 + 11
+            item_price = item_price + 80 + 7
         elif item_price > 1000:
-            item_price = item_price + 100 + 11
+            item_price = item_price + 100 + 7
         else:
             pass
         return item_price
@@ -47,14 +47,17 @@ class CosmeticSpider(scrapy.Spider):
 
         detail_list = response.xpath('//*[@class="cart-table"]/tr')
         for detail in detail_list:
-            try:
-                item_name = detail.xpath('.//td[1]/a/text()').extract()[0]
-            # 部分item没有图。所以html结构不一样，这里做一个检查,None返回触发IndexError: list index out of range
-            except IndexError:
-                item_name = detail.xpath('.//td[1]/text()').extract()[0]
+            # 旧版本库存系统的结构，已淘汰
+            # try:
+            #     item_name = detail.xpath('.//td[1]/a/text()').extract()[0]
+            # # 部分item没有图。所以html结构不一样，这里做一个检查,None返回触发IndexError: list index out of range
+            # except IndexError:
+            #     item_name = detail.xpath('.//td[1]/text()').extract()[0]
+            item_name = detail.xpath('.//td[1]/span/text()').extract()[0]
             item_count = detail.xpath('.//td[2]/text()').extract()[0]
             item_price = detail.xpath('.//td[3]/text()').extract()[0]
             # 将item_price从string转换成float
+            item_count = int(item_count)
             item_price = float(item_price.replace('￥', '').replace(',', ''))
             item_price = self.price_adjust(item_price)  # 价格调整
             # 将数据送到pipelines
