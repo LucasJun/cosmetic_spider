@@ -7,6 +7,8 @@
 
 import pymongo
 from scrapy.conf import settings
+from datetime import datetime
+import time
 
 class CosmeticSpiderPipeline(object):
     def __init__(self):
@@ -26,8 +28,19 @@ class CosmeticSpiderPipeline(object):
         for item in self.sheet.find():
             updateFilter = {'item_name': item['item_name']}
             self.sheet.update_one(filter=updateFilter, update={'$set': {'item_count': 0}})
+            if self.is_outdated(item['date']):
+                self.sheet.delete_one(item)
         print('库存清零')
 
+    # 过久无更新的物品则删除
+    def is_outdated(self, item_date):
+        now_date = time.mktime(time.localtime())
+        item_date = time.mktime(time.strptime(item_date, "%Y-%m-%d %H:%M:%S"))
+        time_t = now_date - item_date
+        if time_t >= 200000.0:
+            return True
+        elif time_t < 200000.0:
+            return False
 
     def process_item(self, item, spider):
         data = dict(item)
